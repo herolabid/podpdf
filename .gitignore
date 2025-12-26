@@ -4,8 +4,9 @@ node_modules/
 # Build output (will be generated on npm publish)
 dist/
 
-# Generated PDF files
+# Generated PDF files (except samples)
 *.pdf
+!samples/*.pdf
 
 # Bun
 bun.lock
@@ -23,8 +24,7 @@ Thumbs.db
 # Test output
 test/output/
 
-# Samples output (regenerated)
-samples/*.pdf
+# Samples output (included for demo)
 
 # Debug
 *.log

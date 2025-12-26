@@ -1,0 +1,1067 @@
+%PDF-1.4
+%µµµµ
+1 0 obj
+<</Type/Font/Subtype/Type1/BaseFont/Helvetica-Bold>>
+endobj
+2 0 obj
+<</Type/Font/Subtype/Type1/BaseFont/Helvetica>>
+endobj
+3 0 obj
+<</Length 9375>>
+stream
+q
+0 792 595 50 re
+0.118 0.227 0.373 rg
+f
+Q
+q
+BT
+1.000 1.000 1.000 rg
+/HelveticaBold 20 Tf
+50 812 Td
+(PODPDF - Table Examples) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/HelveticaBold 14 Tf
+50 767 Td
+(1. Simple Table) Tj
+ET
+Q
+q
+50 721 230 26 re
+0.941 0.941 0.941 rg
+f
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/HelveticaBold 10 Tf
+58 731 Td
+(Product) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/HelveticaBold 10 Tf
+172.50 731 Td
+(Qty) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/HelveticaBold 10 Tf
+247 731 Td
+(Price) Tj
+ET
+Q
+q
+50 695 230 26 re
+1.000 1.000 1.000 rg
+f
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+58 705 Td
+(Apple) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+175 705 Td
+(10) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+247 705 Td
+($1.50) Tj
+ET
+Q
+q
+50 669 230 26 re
+0.976 0.976 0.976 rg
+f
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+58 679 Td
+(Banana) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+175 679 Td
+(25) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+247 679 Td
+($0.75) Tj
+ET
+Q
+q
+50 643 230 26 re
+1.000 1.000 1.000 rg
+f
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+58 653 Td
+(Orange) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+175 653 Td
+(15) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+247 653 Td
+($2.00) Tj
+ET
+Q
+q
+50 643 230 104 re
+0.800 0.800 0.800 RG
+S
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/HelveticaBold 14 Tf
+300 767 Td
+(2. Dark Header Style) Tj
+ET
+Q
+q
+300 721 200 26 re
+0.173 0.243 0.314 rg
+f
+Q
+q
+BT
+1.000 1.000 1.000 rg
+/HelveticaBold 10 Tf
+308 731 Td
+(Name) Tj
+ET
+Q
+q
+BT
+1.000 1.000 1.000 rg
+/HelveticaBold 10 Tf
+450 731 Td
+(Role) Tj
+ET
+Q
+q
+300 695 200 26 re
+1.000 1.000 1.000 rg
+f
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+308 705 Td
+(John Doe) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+447.50 705 Td
+(Admin) Tj
+ET
+Q
+q
+300 669 200 26 re
+0.976 0.976 0.976 rg
+f
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+308 679 Td
+(Jane Smith) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+445 679 Td
+(Editor) Tj
+ET
+Q
+q
+300 643 200 26 re
+1.000 1.000 1.000 rg
+f
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+308 653 Td
+(Bob Wilson) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+445 653 Td
+(Viewer) Tj
+ET
+Q
+q
+300 643 200 104 re
+0.800 0.800 0.800 RG
+S
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/HelveticaBold 14 Tf
+50 612 Td
+(3. Invoice Style Table) Tj
+ET
+Q
+q
+50 566 390 26 re
+0.153 0.682 0.376 rg
+f
+Q
+q
+BT
+1.000 1.000 1.000 rg
+/HelveticaBold 10 Tf
+58 576 Td
+(Description) Tj
+ET
+Q
+q
+BT
+1.000 1.000 1.000 rg
+/HelveticaBold 10 Tf
+232.50 576 Td
+(Hours) Tj
+ET
+Q
+q
+BT
+1.000 1.000 1.000 rg
+/HelveticaBold 10 Tf
+322 576 Td
+(Rate) Tj
+ET
+Q
+q
+BT
+1.000 1.000 1.000 rg
+/HelveticaBold 10 Tf
+402 576 Td
+(Amount) Tj
+ET
+Q
+q
+50 540 390 26 re
+1.000 1.000 1.000 rg
+f
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+58 550 Td
+(Web Development) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+230 550 Td
+(40 hrs) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+307 550 Td
+($100/hr) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+402 550 Td
+($4,000) Tj
+ET
+Q
+q
+50 514 390 26 re
+0.976 0.976 0.976 rg
+f
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+58 524 Td
+(UI/UX Design) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+230 524 Td
+(20 hrs) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+312 524 Td
+($80/hr) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+402 524 Td
+($1,600) Tj
+ET
+Q
+q
+50 488 390 26 re
+1.000 1.000 1.000 rg
+f
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+58 498 Td
+(Consulting) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+230 498 Td
+(10 hrs) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+307 498 Td
+($150/hr) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+402 498 Td
+($1,500) Tj
+ET
+Q
+q
+50 462 390 26 re
+0.976 0.976 0.976 rg
+f
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+58 472 Td
+(Maintenance) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+232.50 472 Td
+(5 hrs) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+312 472 Td
+($60/hr) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+412 472 Td
+($300) Tj
+ET
+Q
+q
+50 462 390 130 re
+0.118 0.518 0.286 RG
+S
+Q
+q
+304 422 m
+426 422 l
+430 422 430 426 y
+430 443 l
+430 447 426 447 y
+304 447 l
+300 447 300 443 y
+300 426 l
+300 422 304 422 y
+h
+0.153 0.682 0.376 rg
+f
+Q
+q
+BT
+1.000 1.000 1.000 rg
+/HelveticaBold 12 Tf
+326 430 Td
+(Total: $7,400) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/HelveticaBold 14 Tf
+50 392 Td
+(4. Library Comparison) Tj
+ET
+Q
+q
+50 346 320 26 re
+0.906 0.298 0.235 rg
+f
+Q
+q
+BT
+1.000 1.000 1.000 rg
+/HelveticaBold 10 Tf
+58 356 Td
+(Library) Tj
+ET
+Q
+q
+BT
+1.000 1.000 1.000 rg
+/HelveticaBold 10 Tf
+170 356 Td
+(Size) Tj
+ET
+Q
+q
+BT
+1.000 1.000 1.000 rg
+/HelveticaBold 10 Tf
+240 356 Td
+(Zero-dep) Tj
+ET
+Q
+q
+BT
+1.000 1.000 1.000 rg
+/HelveticaBold 10 Tf
+322.50 356 Td
+(Speed) Tj
+ET
+Q
+q
+50 320 320 26 re
+1.000 1.000 1.000 rg
+f
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+58 330 Td
+(podpdf) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+170 330 Td
+(8 KB) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+252.50 330 Td
+(Yes) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+325 330 Td
+(5.5x) Tj
+ET
+Q
+q
+50 294 320 26 re
+0.976 0.976 0.976 rg
+f
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+58 304 Td
+(jsPDF) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+165 304 Td
+(290 KB) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+255 304 Td
+(No) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+330 304 Td
+(1x) Tj
+ET
+Q
+q
+50 268 320 26 re
+1.000 1.000 1.000 rg
+f
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+58 278 Td
+(pdfkit) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+170 278 Td
+(1 MB) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+252.50 278 Td
+(Yes) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+325 278 Td
+(0.8x) Tj
+ET
+Q
+q
+50 242 320 26 re
+0.976 0.976 0.976 rg
+f
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+58 252 Td
+(tinypdf) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+165 252 Td
+(3.3 KB) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+252.50 252 Td
+(Yes) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+330 252 Td
+(4x) Tj
+ET
+Q
+q
+50 242 320 130 re
+0.753 0.224 0.169 RG
+S
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/HelveticaBold 14 Tf
+50 202 Td
+(5. Schedule) Tj
+ET
+Q
+q
+50 160 270 22 re
+0.204 0.596 0.859 rg
+f
+Q
+q
+BT
+1.000 1.000 1.000 rg
+/HelveticaBold 10 Tf
+70 168 Td
+(Time) Tj
+ET
+Q
+q
+BT
+1.000 1.000 1.000 rg
+/HelveticaBold 10 Tf
+116 168 Td
+(Activity) Tj
+ET
+Q
+q
+BT
+1.000 1.000 1.000 rg
+/HelveticaBold 10 Tf
+246 168 Td
+(Location) Tj
+ET
+Q
+q
+50 138 270 22 re
+1.000 1.000 1.000 rg
+f
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+67.50 146 Td
+(09:00) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+116 146 Td
+(Standup Meeting) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+246 146 Td
+(Room A) Tj
+ET
+Q
+q
+50 116 270 22 re
+0.976 0.976 0.976 rg
+f
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+67.50 124 Td
+(10:00) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+116 124 Td
+(Code Review) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+246 124 Td
+(Online) Tj
+ET
+Q
+q
+50 94 270 22 re
+1.000 1.000 1.000 rg
+f
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+67.50 102 Td
+(12:00) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+116 102 Td
+(Lunch Break) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+246 102 Td
+(-) Tj
+ET
+Q
+q
+50 72 270 22 re
+0.976 0.976 0.976 rg
+f
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+67.50 80 Td
+(14:00) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+116 80 Td
+(Sprint Planning) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+246 80 Td
+(Room B) Tj
+ET
+Q
+q
+50 50 270 22 re
+1.000 1.000 1.000 rg
+f
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+67.50 58 Td
+(16:00) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+116 58 Td
+(Development) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+246 58 Td
+(Desk) Tj
+ET
+Q
+q
+50 50 270 132 re
+0.800 0.800 0.800 RG
+S
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/HelveticaBold 14 Tf
+320 202 Td
+(6. Project Status) Tj
+ET
+Q
+q
+320 160 200 22 re
+0.953 0.612 0.071 rg
+f
+Q
+q
+BT
+1.000 1.000 1.000 rg
+/HelveticaBold 10 Tf
+326 168 Td
+(Task) Tj
+ET
+Q
+q
+BT
+1.000 1.000 1.000 rg
+/HelveticaBold 10 Tf
+420 168 Td
+(Status) Tj
+ET
+Q
+q
+BT
+1.000 1.000 1.000 rg
+/HelveticaBold 10 Tf
+492.50 168 Td
+(%) Tj
+ET
+Q
+q
+320 138 200 22 re
+1.000 1.000 1.000 rg
+f
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+326 146 Td
+(Auth) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+425 146 Td
+(Done) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+485 146 Td
+(100%) Tj
+ET
+Q
+q
+320 116 200 22 re
+0.976 0.976 0.976 rg
+f
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+326 124 Td
+(Dashboard) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+415 124 Td
+(Progress) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+487.50 124 Td
+(75%) Tj
+ET
+Q
+q
+320 94 200 22 re
+1.000 1.000 1.000 rg
+f
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+326 102 Td
+(API) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+415 102 Td
+(Progress) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+487.50 102 Td
+(60%) Tj
+ET
+Q
+q
+320 72 200 22 re
+0.976 0.976 0.976 rg
+f
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+326 80 Td
+(Testing) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+417.50 80 Td
+(Pending) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+490 80 Td
+(0%) Tj
+ET
+Q
+q
+320 50 200 22 re
+1.000 1.000 1.000 rg
+f
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+326 58 Td
+(Deploy) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+417.50 58 Td
+(Pending) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 10 Tf
+490 58 Td
+(0%) Tj
+ET
+Q
+q
+320 50 200 132 re
+0.800 0.800 0.800 RG
+S
+Q
+endstream
+endobj
+4 0 obj
+<</Type/Pages/Kids[5 0 R]/Count 1>>
+endobj
+5 0 obj
+<</Type/Page/Parent 4 0 R/MediaBox[0 0 595 842]/Contents 3 0 R/Resources<</Font<</HelveticaBold 1 0 R/Helvetica 2 0 R>>>>>>
+endobj
+6 0 obj
+<</Type/Catalog/Pages 4 0 R>>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000019 00000 n 
+0000000087 00000 n 
+0000000150 00000 n 
+0000009575 00000 n 
+0000009626 00000 n 
+0000009765 00000 n 
+trailer
+<</Size 7/Root 6 0 R>>
+startxref
+9810
+%%EOF
