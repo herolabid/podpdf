@@ -17,32 +17,31 @@
 | **podpdf** | **8 KB** | **0** | **5.5x** |
 | jsPDF | 290 KB | 2+ | 1x |
 | pdfkit | 1 MB | 10+ | 0.8x |
-| tinypdf | 3.3 KB | 0 | 4x |
 
 ## Feature Comparison
 
-| Feature | podpdf | jsPDF | pdfkit | tinypdf |
-|---------|:------:|:-----:|:------:|:-------:|
-| **Text** | ✅ | ✅ | ✅ | ✅ |
-| **Text Styling (bold/italic)** | ✅ | ✅ | ✅ | ❌ |
-| **Text Wrap** | ✅ | ✅ | ✅ | ❌ |
-| **Text Alignment** | ✅ | ✅ | ✅ | ❌ |
-| **Rectangle** | ✅ | ✅ | ✅ | ✅ |
-| **Rounded Rectangle** | ✅ | ✅ | ✅ | ❌ |
-| **Circle** | ✅ | ✅ | ✅ | ❌ |
-| **Line (solid/dashed)** | ✅ | ✅ | ✅ | ✅ |
-| **Tables** | ✅ | ⚠️ Plugin | ⚠️ Manual | ❌ |
-| **Images (JPEG/PNG)** | ✅ | ✅ | ✅ | ❌ |
-| **Links/URLs** | ✅ | ✅ | ✅ | ❌ |
-| **Multi-page** | ✅ | ✅ | ✅ | ✅ |
-| **Custom Fonts** | ❌ | ✅ | ✅ | ❌ |
-| **Vector Graphics** | ⚠️ Basic | ✅ | ✅ Full | ❌ |
-| **Forms/Fields** | ❌ | ✅ | ✅ | ❌ |
-| **Encryption** | ❌ | ✅ | ✅ | ❌ |
-| **TypeScript Native** | ✅ | ❌ | ❌ | ✅ |
-| **Fluent API** | ✅ | ⚠️ Partial | ✅ | ✅ |
-| **Browser Support** | ✅ | ✅ | ❌ | ✅ |
-| **Node.js/Bun** | ✅ | ✅ | ✅ | ✅ |
+| Feature | podpdf | jsPDF | pdfkit |
+|---------|:------:|:-----:|:------:|
+| **Text** | ✅ | ✅ | ✅ |
+| **Text Styling (bold/italic)** | ✅ | ✅ | ✅ |
+| **Text Wrap** | ✅ | ✅ | ✅ |
+| **Text Alignment** | ✅ | ✅ | ✅ |
+| **Rectangle** | ✅ | ✅ | ✅ |
+| **Rounded Rectangle** | ✅ | ✅ | ✅ |
+| **Circle** | ✅ | ✅ | ✅ |
+| **Line (solid/dashed)** | ✅ | ✅ | ✅ |
+| **Tables** | ✅ | ⚠️ Plugin | ⚠️ Manual |
+| **Images (JPEG/PNG)** | ✅ | ✅ | ✅ |
+| **Links/URLs** | ✅ | ✅ | ✅ |
+| **Multi-page** | ✅ | ✅ | ✅ |
+| **Custom Fonts** | ❌ | ✅ | ✅ |
+| **Vector Graphics** | ⚠️ Basic | ✅ | ✅ Full |
+| **Forms/Fields** | ❌ | ✅ | ✅ |
+| **Encryption** | ❌ | ✅ | ✅ |
+| **TypeScript Native** | ✅ | ❌ | ❌ |
+| **Fluent API** | ✅ | ⚠️ Partial | ✅ |
+| **Browser Support** | ✅ | ✅ | ❌ |
+| **Node.js/Bun** | ✅ | ✅ | ✅ |
 
 > **podpdf** - Best balance of size, speed, and features for common use-cases (invoices, reports, tables)
 
