@@ -1,0 +1,57 @@
+{
+  "name": "podpdf",
+  "version": "1.0.0",
+  "description": "Ultra-fast, zero-dependency PDF generation library. 8KB minified, 5x faster than jsPDF.",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "bun build src/index.ts --outdir dist --target node --minify && bun run build:types",
+    "build:types": "tsc --emitDeclarationOnly",
+    "dev": "bun --watch src/index.ts",
+    "test": "bun test/test.ts",
+    "example": "bun example.ts",
+    "samples": "bun samples/tables.ts && bun samples/invoice.ts && bun samples/report.ts"
+  },
+  "keywords": [
+    "pdf",
+    "pdf-generation",
+    "pdf-generator",
+    "document",
+    "invoice",
+    "report",
+    "table",
+    "typescript",
+    "zero-dependency",
+    "fast",
+    "lightweight",
+    "minimal"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/user/podpdf"
+  },
+  "homepage": "https://github.com/user/podpdf#readme",
+  "bugs": {
+    "url": "https://github.com/user/podpdf/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.3.5",
+    "typescript": "^5.7.2"
+  }
+}
