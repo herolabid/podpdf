@@ -1,0 +1,38 @@
+# Source files (dist is published)
+src/
+
+# Test files
+test/
+
+# Examples and samples
+example.ts
+samples/
+
+# Config files
+tsconfig.json
+bun.lock
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment
+.env
+.env.local
+
+# Generated PDFs
+*.pdf
