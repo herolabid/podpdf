@@ -7,7 +7,7 @@ endobj
 <</Type/Font/Subtype/Type1/BaseFont/Helvetica>>
 endobj
 3 0 obj
-<</Length 5912>>
+<</Length 5972>>
 stream
 q
 0 742 595 100 re
@@ -26,7 +26,7 @@ q
 BT
 0.290 0.620 1.000 rg
 /HelveticaBold 28 Tf
-447 807 Td
+443.08 807 Td
 (INVOICE) Tj
 ET
 Q
@@ -34,7 +34,7 @@ q
 BT
 0.533 0.533 0.533 rg
 /Helvetica 12 Tf
-473 777 Td
+470.12 777 Td
 (INV-2024-001) Tj
 ET
 Q
@@ -195,7 +195,7 @@ q
 BT
 1.000 1.000 1.000 rg
 /HelveticaBold 10 Tf
-292.50 534 Td
+292.20 534 Td
 (Qty) Tj
 ET
 Q
@@ -203,7 +203,7 @@ q
 BT
 1.000 1.000 1.000 rg
 /HelveticaBold 10 Tf
-390 534 Td
+389.20 534 Td
 (Rate) Tj
 ET
 Q
@@ -211,7 +211,7 @@ q
 BT
 1.000 1.000 1.000 rg
 /HelveticaBold 10 Tf
-475 534 Td
+473.80 534 Td
 (Amount) Tj
 ET
 Q
@@ -232,7 +232,7 @@ q
 BT
 0.000 0.000 0.000 rg
 /Helvetica 10 Tf
-297.50 504 Td
+297.40 504 Td
 (1) Tj
 ET
 Q
@@ -240,7 +240,7 @@ q
 BT
 0.000 0.000 0.000 rg
 /Helvetica 10 Tf
-365 504 Td
+363.20 504 Td
 ($5,000.00) Tj
 ET
 Q
@@ -248,7 +248,7 @@ q
 BT
 0.000 0.000 0.000 rg
 /Helvetica 10 Tf
-460 504 Td
+458.20 504 Td
 ($5,000.00) Tj
 ET
 Q
@@ -269,7 +269,7 @@ q
 BT
 0.000 0.000 0.000 rg
 /Helvetica 10 Tf
-297.50 474 Td
+297.40 474 Td
 (1) Tj
 ET
 Q
@@ -277,7 +277,7 @@ q
 BT
 0.000 0.000 0.000 rg
 /Helvetica 10 Tf
-365 474 Td
+363.20 474 Td
 ($8,000.00) Tj
 ET
 Q
@@ -285,7 +285,7 @@ q
 BT
 0.000 0.000 0.000 rg
 /Helvetica 10 Tf
-460 474 Td
+458.20 474 Td
 ($8,000.00) Tj
 ET
 Q
@@ -306,7 +306,7 @@ q
 BT
 0.000 0.000 0.000 rg
 /Helvetica 10 Tf
-295 444 Td
+294.80 444 Td
 (40) Tj
 ET
 Q
@@ -314,7 +314,7 @@ q
 BT
 0.000 0.000 0.000 rg
 /Helvetica 10 Tf
-380 444 Td
+378.80 444 Td
 ($75.00) Tj
 ET
 Q
@@ -322,7 +322,7 @@ q
 BT
 0.000 0.000 0.000 rg
 /Helvetica 10 Tf
-460 444 Td
+458.20 444 Td
 ($3,000.00) Tj
 ET
 Q
@@ -343,7 +343,7 @@ q
 BT
 0.000 0.000 0.000 rg
 /Helvetica 10 Tf
-295 414 Td
+294.80 414 Td
 (20) Tj
 ET
 Q
@@ -351,7 +351,7 @@ q
 BT
 0.000 0.000 0.000 rg
 /Helvetica 10 Tf
-375 414 Td
+373.60 414 Td
 ($100.00) Tj
 ET
 Q
@@ -359,7 +359,7 @@ q
 BT
 0.000 0.000 0.000 rg
 /Helvetica 10 Tf
-460 414 Td
+458.20 414 Td
 ($2,000.00) Tj
 ET
 Q
@@ -380,7 +380,7 @@ q
 BT
 0.000 0.000 0.000 rg
 /Helvetica 10 Tf
-295 384 Td
+294.80 384 Td
 (15) Tj
 ET
 Q
@@ -388,7 +388,7 @@ q
 BT
 0.000 0.000 0.000 rg
 /Helvetica 10 Tf
-380 384 Td
+378.80 384 Td
 ($60.00) Tj
 ET
 Q
@@ -396,7 +396,7 @@ q
 BT
 0.000 0.000 0.000 rg
 /Helvetica 10 Tf
-470 384 Td
+468.60 384 Td
 ($900.00) Tj
 ET
 Q
@@ -431,7 +431,7 @@ q
 BT
 0.000 0.000 0.000 rg
 /Helvetica 11 Tf
-445 342 Td
+442.80 342 Td
 ($18,900.00) Tj
 ET
 Q
@@ -447,7 +447,7 @@ q
 BT
 0.000 0.000 0.000 rg
 /Helvetica 11 Tf
-450.50 322 Td
+448.52 322 Td
 ($1,890.00) Tj
 ET
 Q
@@ -483,7 +483,7 @@ q
 BT
 1.000 1.000 1.000 rg
 /HelveticaBold 12 Tf
-440 275 Td
+437.60 275 Td
 ($20,790.00) Tj
 ET
 Q
@@ -597,7 +597,7 @@ q
 BT
 0.400 0.400 0.400 rg
 /Helvetica 11 Tf
-220 92 Td
+216.92 92 Td
 (Thank you for your business!) Tj
 ET
 Q
@@ -605,7 +605,7 @@ q
 BT
 0.600 0.600 0.600 rg
 /Helvetica 9 Tf
-202.50 74 Td
+198.72 74 Td
 (Questions? Email billing@techsolutions.com) Tj
 ET
 Q
@@ -626,11 +626,11 @@ xref
 0000000019 00000 n 
 0000000087 00000 n 
 0000000150 00000 n 
-0000006112 00000 n 
-0000006163 00000 n 
-0000006302 00000 n 
+0000006172 00000 n 
+0000006223 00000 n 
+0000006362 00000 n 
 trailer
 <</Size 7/Root 6 0 R>>
 startxref
-6347
+6407
 %%EOF

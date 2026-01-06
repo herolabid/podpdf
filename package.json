@@ -10,13 +10,17 @@
     ".": {
       "import": "./dist/index.js",
       "types": "./dist/index.d.ts"
+    },
+    "./plus": {
+      "import": "./dist/plus.js",
+      "types": "./dist/plus.d.ts"
     }
   },
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "bun build src/index.ts --outdir dist --target node --minify && bun run build:types",
+    "build": "bun build src/index.ts src/plus.ts --outdir dist --target node --minify && bun run build:types",
     "build:types": "tsc --emitDeclarationOnly",
     "dev": "bun --watch src/index.ts",
     "test": "bun test/test.ts",

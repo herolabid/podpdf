@@ -7,41 +7,44 @@
 [![zero dependencies](https://img.shields.io/badge/dependencies-0-blue)](https://www.npmjs.com/package/podpdf)
 
 ```
-8 KB minified  •  Zero dependencies  •  5x faster than jsPDF  •  TypeScript native
+~9 KB minified  •  Zero dependencies  •  5x faster than jsPDF  •  TypeScript native
 ```
 
 ## Why podpdf?
 
 | Library | Size | Dependencies | Speed |
 |---------|------|--------------|-------|
-| **podpdf** | **8 KB** | **0** | **5.5x** |
+| **podpdf** | **~9 KB** | **0** | **5.5x** |
+| **podpdf/plus** | **~13 KB** | **0** | **5x** |
 | jsPDF | 290 KB | 2+ | 1x |
 | pdfkit | 1 MB | 10+ | 0.8x |
 
 ## Feature Comparison
 
-| Feature | podpdf | jsPDF | pdfkit |
-|---------|:------:|:-----:|:------:|
-| **Text** | ✅ | ✅ | ✅ |
-| **Text Styling (bold/italic)** | ✅ | ✅ | ✅ |
-| **Text Wrap** | ✅ | ✅ | ✅ |
-| **Text Alignment** | ✅ | ✅ | ✅ |
-| **Rectangle** | ✅ | ✅ | ✅ |
-| **Rounded Rectangle** | ✅ | ✅ | ✅ |
-| **Circle** | ✅ | ✅ | ✅ |
-| **Line (solid/dashed)** | ✅ | ✅ | ✅ |
-| **Tables** | ✅ | ⚠️ Plugin | ⚠️ Manual |
-| **Images (JPEG/PNG)** | ✅ | ✅ | ✅ |
-| **Links/URLs** | ✅ | ✅ | ✅ |
-| **Multi-page** | ✅ | ✅ | ✅ |
-| **Custom Fonts** | ❌ | ✅ | ✅ |
-| **Vector Graphics** | ⚠️ Basic | ✅ | ✅ Full |
-| **Forms/Fields** | ❌ | ✅ | ✅ |
-| **Encryption** | ❌ | ✅ | ✅ |
-| **TypeScript Native** | ✅ | ❌ | ❌ |
-| **Fluent API** | ✅ | ⚠️ Partial | ✅ |
-| **Browser Support** | ✅ | ✅ | ❌ |
-| **Node.js/Bun** | ✅ | ✅ | ✅ |
+| Feature | podpdf | podpdf/plus | jsPDF | pdfkit |
+|---------|:------:|:-----------:|:-----:|:------:|
+| **Text** | ✅ | ✅ | ✅ | ✅ |
+| **Text Styling (bold/italic)** | ✅ | ✅ | ✅ | ✅ |
+| **Text Wrap** | ✅ | ✅ | ✅ | ✅ |
+| **Text Alignment** | ✅ | ✅ | ✅ | ✅ |
+| **Rectangle** | ✅ | ✅ | ✅ | ✅ |
+| **Rounded Rectangle** | ✅ | ✅ | ✅ | ✅ |
+| **Circle** | ✅ | ✅ | ✅ | ✅ |
+| **Line (solid/dashed)** | ✅ | ✅ | ✅ | ✅ |
+| **Tables** | ✅ | ✅ | ⚠️ Plugin | ⚠️ Manual |
+| **Images (JPEG)** | ✅ | ✅ | ✅ | ✅ |
+| **Images (PNG)** | ❌ | ✅ | ✅ | ✅ |
+| **Links/URLs** | ✅ | ✅ | ✅ | ✅ |
+| **Multi-page** | ✅ | ✅ | ✅ | ✅ |
+| **Document Metadata** | ✅ | ✅ | ✅ | ✅ |
+| **Custom Fonts (TTF)** | ❌ | ✅ | ✅ | ✅ |
+| **Vector Graphics** | ⚠️ Basic | ⚠️ Basic | ✅ | ✅ Full |
+| **Forms/Fields** | ❌ | ❌ | ✅ | ✅ |
+| **Encryption** | ❌ | ❌ | ✅ | ✅ |
+| **TypeScript Native** | ✅ | ✅ | ❌ | ❌ |
+| **Fluent API** | ✅ | ✅ | ⚠️ Partial | ✅ |
+| **Browser Support** | ✅ | ✅ | ✅ | ❌ |
+| **Node.js/Bun** | ✅ | ✅ | ✅ | ✅ |
 
 > **podpdf** - Best balance of size, speed, and features for common use-cases (invoices, reports, tables)
 
@@ -73,10 +76,31 @@ await pdf('A4')
 - **Text** - Multiple fonts, sizes, colors, alignment, text wrapping
 - **Shapes** - Rectangle, rounded rectangle, circle, line (solid & dashed)
 - **Tables** - Easy table creation with headers, styling, alignment
-- **Images** - JPEG and PNG support
+- **Images** - JPEG support (PNG via podpdf/plus)
 - **Links** - Clickable URLs with optional underline
 - **Multi-page** - Multiple pages with different sizes
+- **Metadata** - Document title, author, subject, keywords
 - **Fluent API** - Chainable methods for clean code
+
+### podpdf/plus (Extended)
+
+For PNG images and custom fonts, use `podpdf/plus`:
+
+```typescript
+import { pdfPlus } from 'podpdf/plus'
+
+// Load custom font
+const fontData = await Bun.file('custom-font.ttf').bytes()
+
+// Load PNG image
+const pngData = await Bun.file('logo.png').bytes()
+
+await pdfPlus('A4')
+  .registerFont('custom', fontData)
+  .text('Custom Font Text', 50, 50, { font: 'custom' })
+  .imagePng(pngData, 50, 100, { width: 200 })  // async method
+  .save('output.pdf')
+```
 
 ## API Reference
 
@@ -188,6 +212,24 @@ const imageData = await Bun.file('photo.jpg').bytes()
 .page()           // Add page with default size
 .page('A5')       // Different size
 .page({ width: 500, height: 700 })  // Custom
+```
+
+### Metadata
+
+```typescript
+.metadata({ title?, author?, subject?, keywords?, creator? })
+```
+
+```typescript
+pdf('A4')
+  .metadata({
+    title: 'Invoice #123',
+    author: 'Company Name',
+    subject: 'Monthly Invoice',
+    keywords: 'invoice, billing'
+  })
+  .text('...', 50, 50)
+  .save('invoice.pdf')
 ```
 
 ### Output
@@ -362,6 +404,7 @@ import type {
   Align,       // 'left' | 'center' | 'right'
   Weight,      // 'normal' | 'bold' | 'italic' | 'bolditalic'
   Size,        // { width, height }
+  PDFMetadata, // { title?, author?, subject?, keywords?, creator? }
   TextOpts,
   RectOpts,
   LineOpts,

@@ -7,7 +7,7 @@ endobj
 <</Type/Font/Subtype/Type1/BaseFont/Helvetica>>
 endobj
 3 0 obj
-<</Length 6260>>
+<</Length 6347>>
 stream
 q
 0 772 595 70 re
@@ -34,7 +34,7 @@ q
 BT
 0.584 0.647 0.651 rg
 /Helvetica 11 Tf
-440.50 802 Td
+436.32 802 Td
 (Tech Solutions Inc.) Tj
 ET
 Q
@@ -56,7 +56,7 @@ q
 BT
 1.000 1.000 1.000 rg
 /Helvetica 9 Tf
-95.75 734 Td
+94.58 734 Td
 (Total Revenue) Tj
 ET
 Q
@@ -64,7 +64,7 @@ q
 BT
 1.000 1.000 1.000 rg
 /HelveticaBold 20 Tf
-85 712 Td
+83.40 712 Td
 ($109,100) Tj
 ET
 Q
@@ -86,7 +86,7 @@ q
 BT
 1.000 1.000 1.000 rg
 /Helvetica 9 Tf
-281.50 734 Td
+280.96 734 Td
 (Growth) Tj
 ET
 Q
@@ -94,7 +94,7 @@ q
 BT
 1.000 1.000 1.000 rg
 /HelveticaBold 20 Tf
-260 712 Td
+258.60 712 Td
 (+104.8%) Tj
 ET
 Q
@@ -116,7 +116,7 @@ q
 BT
 1.000 1.000 1.000 rg
 /Helvetica 9 Tf
-440.25 734 Td
+439.26 734 Td
 (Avg Monthly) Tj
 ET
 Q
@@ -124,7 +124,7 @@ q
 BT
 1.000 1.000 1.000 rg
 /HelveticaBold 20 Tf
-430 712 Td
+428.60 712 Td
 ($18,183) Tj
 ET
 Q
@@ -168,7 +168,7 @@ q
 BT
 0.400 0.400 0.400 rg
 /Helvetica 9 Tf
-108.25 487 Td
+107.98 487 Td
 (Jan) Tj
 ET
 Q
@@ -176,7 +176,7 @@ q
 BT
 0.200 0.200 0.200 rg
 /Helvetica 8 Tf
-103 572.59 Td
+102.52 572.59 Td
 ($12.5k) Tj
 ET
 Q
@@ -198,7 +198,7 @@ q
 BT
 0.400 0.400 0.400 rg
 /Helvetica 9 Tf
-178.25 487 Td
+177.98 487 Td
 (Feb) Tj
 ET
 Q
@@ -206,7 +206,7 @@ q
 BT
 0.200 0.200 0.200 rg
 /Helvetica 8 Tf
-173 588.06 Td
+172.52 588.06 Td
 ($15.8k) Tj
 ET
 Q
@@ -228,7 +228,7 @@ q
 BT
 0.400 0.400 0.400 rg
 /Helvetica 9 Tf
-248.25 487 Td
+247.98 487 Td
 (Mar) Tj
 ET
 Q
@@ -236,7 +236,7 @@ q
 BT
 0.200 0.200 0.200 rg
 /Helvetica 8 Tf
-243 580.56 Td
+242.52 580.56 Td
 ($14.2k) Tj
 ET
 Q
@@ -258,7 +258,7 @@ q
 BT
 0.400 0.400 0.400 rg
 /Helvetica 9 Tf
-318.25 487 Td
+317.98 487 Td
 (Apr) Tj
 ET
 Q
@@ -266,7 +266,7 @@ q
 BT
 0.200 0.200 0.200 rg
 /Helvetica 8 Tf
-313 602.59 Td
+312.52 602.59 Td
 ($18.9k) Tj
 ET
 Q
@@ -288,7 +288,7 @@ q
 BT
 0.400 0.400 0.400 rg
 /Helvetica 9 Tf
-388.25 487 Td
+387.98 487 Td
 (May) Tj
 ET
 Q
@@ -296,7 +296,7 @@ q
 BT
 0.200 0.200 0.200 rg
 /Helvetica 8 Tf
-383 617.59 Td
+382.52 617.59 Td
 ($22.1k) Tj
 ET
 Q
@@ -318,7 +318,7 @@ q
 BT
 0.400 0.400 0.400 rg
 /Helvetica 9 Tf
-458.25 487 Td
+457.98 487 Td
 (Jun) Tj
 ET
 Q
@@ -326,7 +326,7 @@ q
 BT
 0.200 0.200 0.200 rg
 /Helvetica 8 Tf
-453 634 Td
+452.52 634 Td
 ($25.6k) Tj
 ET
 Q
@@ -355,7 +355,7 @@ q
 BT
 1.000 1.000 1.000 rg
 /HelveticaBold 10 Tf
-170 416 Td
+169.40 416 Td
 (Orders) Tj
 ET
 Q
@@ -363,7 +363,7 @@ q
 BT
 1.000 1.000 1.000 rg
 /HelveticaBold 10 Tf
-277 416 Td
+275.60 416 Td
 (Revenue) Tj
 ET
 Q
@@ -371,7 +371,7 @@ q
 BT
 1.000 1.000 1.000 rg
 /HelveticaBold 10 Tf
-345 416 Td
+344.40 416 Td
 (Change) Tj
 ET
 Q
@@ -392,7 +392,7 @@ q
 BT
 0.000 0.000 0.000 rg
 /Helvetica 10 Tf
-180 390 Td
+179.80 390 Td
 (45) Tj
 ET
 Q
@@ -400,7 +400,7 @@ q
 BT
 0.000 0.000 0.000 rg
 /Helvetica 10 Tf
-277 390 Td
+275.60 390 Td
 ($12,500) Tj
 ET
 Q
@@ -408,7 +408,7 @@ q
 BT
 0.000 0.000 0.000 rg
 /Helvetica 10 Tf
-352.50 390 Td
+352.20 390 Td
 (+0%) Tj
 ET
 Q
@@ -429,7 +429,7 @@ q
 BT
 0.000 0.000 0.000 rg
 /Helvetica 10 Tf
-180 364 Td
+179.80 364 Td
 (58) Tj
 ET
 Q
@@ -437,7 +437,7 @@ q
 BT
 0.000 0.000 0.000 rg
 /Helvetica 10 Tf
-277 364 Td
+275.60 364 Td
 ($15,800) Tj
 ET
 Q
@@ -445,7 +445,7 @@ q
 BT
 0.000 0.000 0.000 rg
 /Helvetica 10 Tf
-345 364 Td
+344.40 364 Td
 (+26.4%) Tj
 ET
 Q
@@ -466,7 +466,7 @@ q
 BT
 0.000 0.000 0.000 rg
 /Helvetica 10 Tf
-180 338 Td
+179.80 338 Td
 (52) Tj
 ET
 Q
@@ -474,7 +474,7 @@ q
 BT
 0.000 0.000 0.000 rg
 /Helvetica 10 Tf
-277 338 Td
+275.60 338 Td
 ($14,200) Tj
 ET
 Q
@@ -482,7 +482,7 @@ q
 BT
 0.000 0.000 0.000 rg
 /Helvetica 10 Tf
-345 338 Td
+344.40 338 Td
 (-10.1%) Tj
 ET
 Q
@@ -503,7 +503,7 @@ q
 BT
 0.000 0.000 0.000 rg
 /Helvetica 10 Tf
-180 312 Td
+179.80 312 Td
 (71) Tj
 ET
 Q
@@ -511,7 +511,7 @@ q
 BT
 0.000 0.000 0.000 rg
 /Helvetica 10 Tf
-277 312 Td
+275.60 312 Td
 ($18,900) Tj
 ET
 Q
@@ -519,7 +519,7 @@ q
 BT
 0.000 0.000 0.000 rg
 /Helvetica 10 Tf
-345 312 Td
+344.40 312 Td
 (+33.1%) Tj
 ET
 Q
@@ -540,7 +540,7 @@ q
 BT
 0.000 0.000 0.000 rg
 /Helvetica 10 Tf
-180 286 Td
+179.80 286 Td
 (85) Tj
 ET
 Q
@@ -548,7 +548,7 @@ q
 BT
 0.000 0.000 0.000 rg
 /Helvetica 10 Tf
-277 286 Td
+275.60 286 Td
 ($22,100) Tj
 ET
 Q
@@ -556,7 +556,7 @@ q
 BT
 0.000 0.000 0.000 rg
 /Helvetica 10 Tf
-345 286 Td
+344.40 286 Td
 (+16.9%) Tj
 ET
 Q
@@ -577,7 +577,7 @@ q
 BT
 0.000 0.000 0.000 rg
 /Helvetica 10 Tf
-180 260 Td
+179.80 260 Td
 (98) Tj
 ET
 Q
@@ -585,7 +585,7 @@ q
 BT
 0.000 0.000 0.000 rg
 /Helvetica 10 Tf
-277 260 Td
+275.60 260 Td
 ($25,600) Tj
 ET
 Q
@@ -593,7 +593,7 @@ q
 BT
 0.000 0.000 0.000 rg
 /Helvetica 10 Tf
-345 260 Td
+344.40 260 Td
 (+15.8%) Tj
 ET
 Q
@@ -650,7 +650,7 @@ q
 BT
 0.667 0.667 0.667 rg
 /Helvetica 9 Tf
-249.75 112 Td
+247.86 112 Td
 (Generated with podpdf) Tj
 ET
 Q
@@ -671,11 +671,11 @@ xref
 0000000019 00000 n 
 0000000087 00000 n 
 0000000150 00000 n 
-0000006460 00000 n 
-0000006511 00000 n 
-0000006650 00000 n 
+0000006547 00000 n 
+0000006598 00000 n 
+0000006737 00000 n 
 trailer
 <</Size 7/Root 6 0 R>>
 startxref
-6695
+6782
 %%EOF
