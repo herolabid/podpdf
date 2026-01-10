@@ -5,6 +5,7 @@
 [![npm version](https://img.shields.io/npm/v/podpdf.svg)](https://www.npmjs.com/package/podpdf)
 [![bundle size](https://img.shields.io/badge/size-8KB-brightgreen)](https://bundlephobia.com/package/podpdf)
 [![zero dependencies](https://img.shields.io/badge/dependencies-0-blue)](https://www.npmjs.com/package/podpdf)
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Support-yellow?logo=buy-me-a-coffee)](https://buymeacoffee.com/herostack)
 
 ```
 ~9 KB minified  •  Zero dependencies  •  5x faster than jsPDF  •  TypeScript native
