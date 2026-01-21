@@ -1,6 +1,6 @@
 # podpdf
 
-**Ultra-fast, zero-dependency PDF generation for Node.js & Bun**
+**Ultra-fast, zero-dependency PDF generation for Node.js, Bun & Browser**
 
 [![npm version](https://img.shields.io/npm/v/podpdf.svg)](https://www.npmjs.com/package/podpdf)
 [![bundle size](https://img.shields.io/badge/size-8KB-brightgreen)](https://bundlephobia.com/package/podpdf)
@@ -13,41 +13,45 @@
 
 ## Why podpdf?
 
-| Library | Size | Dependencies | Speed |
-|---------|------|--------------|-------|
-| **podpdf** | **~9 KB** | **0** | **5.5x** |
-| **podpdf/plus** | **~13 KB** | **0** | **5x** |
-| jsPDF | 290 KB | 2+ | 1x |
-| pdfkit | 1 MB | 10+ | 0.8x |
+| Library | Size | Dependencies | Speed | Environment |
+|---------|------|--------------|-------|-------------|
+| **podpdf** | **~9 KB** | **0** | **5.5x** | Node.js/Bun |
+| **podpdf/plus** | **~13 KB** | **0** | **5x** | Node.js/Bun |
+| **podpdf/browser** | **~9 KB** | **0** | **5.5x** | **Browser** ✨ |
+| jsPDF | 290 KB | 2+ | 1x | Browser/Node |
+| pdfkit | 1 MB | 10+ | 0.8x | Node.js only |
 
 ## Feature Comparison
 
-| Feature | podpdf | podpdf/plus | jsPDF | pdfkit |
-|---------|:------:|:-----------:|:-----:|:------:|
-| **Text** | ✅ | ✅ | ✅ | ✅ |
-| **Text Styling (bold/italic)** | ✅ | ✅ | ✅ | ✅ |
-| **Text Wrap** | ✅ | ✅ | ✅ | ✅ |
-| **Text Alignment** | ✅ | ✅ | ✅ | ✅ |
-| **Rectangle** | ✅ | ✅ | ✅ | ✅ |
-| **Rounded Rectangle** | ✅ | ✅ | ✅ | ✅ |
-| **Circle** | ✅ | ✅ | ✅ | ✅ |
-| **Line (solid/dashed)** | ✅ | ✅ | ✅ | ✅ |
-| **Tables** | ✅ | ✅ | ⚠️ Plugin | ⚠️ Manual |
-| **Images (JPEG)** | ✅ | ✅ | ✅ | ✅ |
-| **Images (PNG)** | ❌ | ✅ | ✅ | ✅ |
-| **Links/URLs** | ✅ | ✅ | ✅ | ✅ |
-| **Multi-page** | ✅ | ✅ | ✅ | ✅ |
-| **Document Metadata** | ✅ | ✅ | ✅ | ✅ |
-| **Custom Fonts (TTF)** | ❌ | ✅ | ✅ | ✅ |
-| **Vector Graphics** | ⚠️ Basic | ⚠️ Basic | ✅ | ✅ Full |
-| **Forms/Fields** | ❌ | ❌ | ✅ | ✅ |
-| **Encryption** | ❌ | ❌ | ✅ | ✅ |
-| **TypeScript Native** | ✅ | ✅ | ❌ | ❌ |
-| **Fluent API** | ✅ | ✅ | ⚠️ Partial | ✅ |
-| **Browser Support** | ✅ | ✅ | ✅ | ❌ |
-| **Node.js/Bun** | ✅ | ✅ | ✅ | ✅ |
+### Core Features
 
-> **podpdf** - Best balance of size, speed, and features for common use-cases (invoices, reports, tables)
+| Feature | podpdf | podpdf/plus | podpdf/browser |
+|---------|:------:|:-----------:|:--------------:|
+| Text & Styling | ✅ | ✅ | ✅ |
+| Text Wrap & Alignment | ✅ | ✅ | ✅ |
+| Shapes (rect, circle, line) | ✅ | ✅ | ✅ |
+| Tables | ✅ | ✅ | ✅ |
+| Images (JPEG) | ✅ | ✅ | ✅ |
+| Images (PNG) | ❌ | ✅ | ❌ |
+| Links/URLs | ✅ | ✅ | ✅ |
+| Multi-page | ✅ | ✅ | ✅ |
+| Document Metadata | ✅ | ✅ | ✅ |
+| Custom Fonts (TTF) | ❌ | ✅ | ❌ |
+| TypeScript Native | ✅ | ✅ | ✅ |
+
+### Environment Support
+
+| Platform | podpdf | podpdf/plus | podpdf/browser |
+|----------|:------:|:-----------:|:--------------:|
+| Node.js / Bun | ✅ | ✅ | ❌ |
+| Browser | Manual | Manual | ✅ Native |
+| File System (.save) | ✅ | ✅ | ❌ |
+| Browser Download (.download) | ❌ | ❌ | ✅ |
+
+**Choose the right variant:**
+- `podpdf` - Node.js/Bun for invoices, reports, tables
+- `podpdf/plus` - Need PNG images or custom fonts
+- `podpdf/browser` - Browser-native PDF generation
 
 ## Installation
 
@@ -61,7 +65,19 @@ pnpm add podpdf
 bun add podpdf
 ```
 
+## Package Variants
+
+podpdf provides **3 specialized exports** for different use cases:
+
+| Import | Use Case | Key Features |
+|--------|----------|--------------|
+| `podpdf` | Node.js/Bun | Core features, `.save()` to file |
+| `podpdf/plus` | Node.js/Bun | PNG images + custom TTF fonts |
+| `podpdf/browser` | Browser | Browser-native, `.download()` method |
+
 ## Quick Start
+
+### Node.js / Bun
 
 ```typescript
 import { pdf } from 'podpdf'
@@ -70,6 +86,17 @@ await pdf('A4')
   .text('Hello World!', 50, 50, { size: 24, weight: 'bold' })
   .rect(50, 80, 200, 100, { fill: '#3498db', radius: 10 })
   .save('hello.pdf')
+```
+
+### Browser
+
+```typescript
+import { pdf } from 'podpdf/browser'
+
+pdf('A4')
+  .text('Hello Browser!', 50, 50, { size: 24, weight: 'bold' })
+  .rect(50, 80, 200, 100, { fill: '#3498db', radius: 10 })
+  .download('hello.pdf')  // Triggers browser download
 ```
 
 ## Features
@@ -433,12 +460,52 @@ Tested with 1000 document generations:
 
 ## Browser Support
 
-podpdf is designed for Node.js and Bun. For browser usage, the `build()` method returns a `Uint8Array` that can be converted to a Blob:
+### podpdf/browser (Recommended for Browser)
+
+For browser environments, use the dedicated `podpdf/browser` module with built-in download support:
 
 ```typescript
+import { pdf } from 'podpdf/browser'
+
+// Create and download PDF directly in browser
+pdf('A4')
+  .text('Hello from Browser!', 50, 50, { size: 24, weight: 'bold' })
+  .rect(50, 80, 200, 100, { fill: '#3498db', radius: 10 })
+  .download('document.pdf')  // Triggers browser download
+
+// Or get as Blob for custom handling
+const blob = doc.toBlob()
+
+// Or get data URL for iframe preview
+const dataURL = doc.toDataURL()
+const iframe = document.createElement('iframe')
+iframe.src = dataURL
+```
+
+**Key differences in `podpdf/browser`:**
+- ✅ No Node.js dependencies (fully browser-compatible)
+- ✅ `download(filename)` - Directly triggers browser download
+- ✅ `toBlob()` - Returns Blob object
+- ✅ `toDataURL()` - Returns object URL for preview
+- ❌ No `save()` method (use `download()` instead)
+- ✅ Same API for text, shapes, tables, images, etc.
+
+### Using Core podpdf in Browser
+
+The main `podpdf` module can also work in browsers using the `build()` method:
+
+```typescript
+import { pdf } from 'podpdf'
+
 const bytes = doc.build()
 const blob = new Blob([bytes], { type: 'application/pdf' })
 const url = URL.createObjectURL(blob)
+
+// Trigger download
+const a = document.createElement('a')
+a.href = url
+a.download = 'document.pdf'
+a.click()
 ```
 
 ## License

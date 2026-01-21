@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>podpdf/browser Example</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+    .subtitle {
+      color: #666;
+      margin-bottom: 30px;
+    }
+    button {
+      background: #3498db;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 10px 10px 10px 0;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #2980b9;
+    }
+    button:active {
+      transform: translateY(1px);
+    }
+    #preview {
+      margin-top: 30px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+    }
+    .note {
+      background: #fff3cd;
+      border-left: 4px solid #ffc107;
+      padding: 12px;
+      margin: 20px 0;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🚀 podpdf/browser Example</h1>
+    <p class="subtitle">Generate PDFs directly in your browser - no server needed!</p>
+
+    <div class="note">
+      <strong>Note:</strong> Make sure you're serving this file via a web server (not file://).
+      You can use: <code>python -m http.server</code> or <code>npx serve</code>
+    </div>
+
+    <button onclick="generateSimplePDF()">📄 Download Simple PDF</button>
+    <button onclick="generateInvoice()">🧾 Download Invoice</button>
+    <button onclick="previewPDF()">👁️ Preview in Browser</button>
+
+    <div id="preview"></div>
+  </div>
+
+  <!--
+    In production, use:
+    <script type="module">
+      import { pdf } from 'podpdf/browser'
+    </script>
+
+    For this example, we'll use the built file directly:
+  -->
+  <script type="module">
+    // Import from the built browser module
+    import { pdf } from './dist/browser.js'
+
+    // Example 1: Simple PDF
+    window.generateSimplePDF = function() {
+      pdf('A4')
+        .text('Hello from podpdf/browser!', 50, 50, { size: 24, weight: 'bold', color: '#3498db' })
+        .text('This PDF was generated entirely in your browser.', 50, 85, { size: 14 })
+        .text('No server required! 🎉', 50, 110, { size: 14 })
+        .rect(50, 140, 495, 100, { fill: '#ecf0f1', radius: 10 })
+        .text('Features:', 70, 170, { size: 16, weight: 'bold' })
+        .text('✓ Zero dependencies', 70, 195, { size: 12 })
+        .text('✓ Ultra-fast generation', 70, 215, { size: 12 })
+        .circle(300, 350, 40, { fill: '#3498db' })
+        .line(50, 450, 545, 450, { color: '#3498db', width: 2 })
+        .text('Generated at: ' + new Date().toLocaleString(), 297, 480, {
+          size: 10,
+          color: '#666',
+          align: 'center'
+        })
+        .download('simple-example.pdf')
+    }
+
+    // Example 2: Invoice
+    window.generateInvoice = function() {
+      const items = [
+        ['Web Development', '1', '$5,000.00', '$5,000.00'],
+        ['Mobile App', '1', '$8,000.00', '$8,000.00'],
+        ['UI/UX Design', '40', '$75.00', '$3,000.00'],
+      ]
+
+      pdf('A4')
+        .rect(0, 0, 595, 80, { fill: '#2c3e50' })
+        .text('INVOICE', 50, 35, { size: 28, color: '#fff', weight: 'bold' })
+        .text('INV-2024-001', 545, 35, { size: 14, color: '#3498db', align: 'right' })
+
+        .text('From: Tech Solutions Inc.', 50, 110, { size: 12, weight: 'bold' })
+        .text('123 Innovation Street, SF, CA 94102', 50, 130, { size: 10 })
+
+        .text('Bill To: Acme Corporation', 50, 170, { size: 12, weight: 'bold' })
+        .text('456 Business Avenue, NY, NY 10001', 50, 190, { size: 10 })
+
+        .table(items, 50, 240, {
+          columns: [
+            { header: 'Description', width: 200 },
+            { header: 'Qty', width: 80, align: 'center' },
+            { header: 'Rate', width: 100, align: 'right' },
+            { header: 'Amount', width: 115, align: 'right' },
+          ],
+          headerBg: '#2c3e50',
+          headerColor: '#fff',
+          borderColor: '#ddd'
+        })
+
+        .rect(380, 380, 165, 80, { stroke: '#ddd', radius: 5 })
+        .text('Subtotal:', 395, 405, { size: 11 })
+        .text('$16,000.00', 530, 405, { size: 11, align: 'right' })
+        .text('Tax (10%):', 395, 425, { size: 11 })
+        .text('$1,600.00', 530, 425, { size: 11, align: 'right' })
+        .line(395, 440, 530, 440, { color: '#ddd' })
+        .text('Total:', 395, 455, { size: 12, weight: 'bold' })
+        .text('$17,600.00', 530, 455, { size: 12, weight: 'bold', align: 'right' })
+
+        .text('Thank you for your business!', 297, 550, {
+          size: 12,
+          color: '#666',
+          align: 'center'
+        })
+        .download('invoice.pdf')
+    }
+
+    // Example 3: Preview
+    window.previewPDF = function() {
+      const doc = pdf('A4')
+        .text('PDF Preview Example', 50, 50, { size: 24, weight: 'bold' })
+        .text('This PDF is previewed directly in the browser.', 50, 85, { size: 14 })
+        .rect(50, 120, 200, 100, { fill: '#e74c3c', radius: 10 })
+        .rect(270, 120, 200, 100, { fill: '#3498db', radius: 10 })
+        .circle(150, 300, 50, { fill: '#2ecc71' })
+        .text('Preview powered by podpdf/browser', 297, 400, {
+          size: 12,
+          align: 'center',
+          color: '#666'
+        })
+
+      // Get data URL and create iframe
+      const dataURL = doc.toDataURL()
+      const preview = document.getElementById('preview')
+      preview.innerHTML = `
+        <iframe src="${dataURL}"></iframe>
+        <div style="padding: 10px; background: #f8f9fa; text-align: center;">
+          <button onclick="downloadFromPreview()">💾 Download This PDF</button>
+        </div>
+      `
+
+      // Store for download
+      window.previewedDoc = doc
+    }
+
+    window.downloadFromPreview = function() {
+      if (window.previewedDoc) {
+        window.previewedDoc.download('preview.pdf')
+      }
+    }
+  </script>
+</body>
+</html>

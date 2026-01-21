@@ -1,7 +1,7 @@
 {
   "name": "podpdf",
-  "version": "1.1.0",
-  "description": "Ultra-fast, zero-dependency PDF generation library. 8KB minified, 5x faster than jsPDF.",
+  "version": "1.2.0",
+  "description": "Ultra-fast, zero-dependency PDF generation for Node.js, Bun & Browser. 8KB minified, 5x faster than jsPDF.",
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -14,13 +14,19 @@
     "./plus": {
       "import": "./dist/plus.js",
       "types": "./dist/plus.d.ts"
+    },
+    "./browser": {
+      "import": "./dist/browser.js",
+      "types": "./dist/browser.d.ts"
     }
   },
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "bun build src/index.ts src/plus.ts --outdir dist --target node --minify && bun run build:types",
+    "build": "bun run build:node && bun run build:browser && bun run build:types",
+    "build:node": "bun build src/index.ts src/plus.ts --outdir dist --target node --minify",
+    "build:browser": "bun build src/browser.ts --outdir dist --target browser --minify",
     "build:types": "tsc --emitDeclarationOnly",
     "dev": "bun --watch src/index.ts",
     "test": "bun test/test.ts",
@@ -39,7 +45,10 @@
     "zero-dependency",
     "fast",
     "lightweight",
-    "minimal"
+    "minimal",
+    "browser",
+    "browser-pdf",
+    "client-side"
   ],
   "author": "",
   "license": "MIT",
