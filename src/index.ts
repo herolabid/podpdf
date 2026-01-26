@@ -23,7 +23,7 @@ const rgb = (c: Color): [number, number, number] => {
 }
 const fill = (c: Color) => { const [r, g, b] = rgb(c); return `${r.toFixed(3)} ${g.toFixed(3)} ${b.toFixed(3)} rg` }
 const stroke = (c: Color) => { const [r, g, b] = rgb(c); return `${r.toFixed(3)} ${g.toFixed(3)} ${b.toFixed(3)} RG` }
-const esc = (t: string) => t.replace(/\\/g, '\\\\').replace(/\(/g, '\\(').replace(/\)/g, '\\)')
+const esc = (t: string) => t.replace(/\\/g, '\\\\').replace(/\(/g, '\\(').replace(/\)/g, '\\)').replace(/[^\x00-\x7F]/g, c => `\\${c.charCodeAt(0).toString(8).padStart(3, '0')}`)
 const n = (v: number) => Number.isInteger(v) ? v.toString() : v.toFixed(2)
 const measure = (t: string, s: number) => t.length * s * 0.52
 
@@ -143,7 +143,7 @@ export class PDF {
     const allFonts = new Set<string>(); this.pages.forEach(p => p.f.forEach(f => allFonts.add(f)))
     const fontArr = Array.from(allFonts)
     const fontIds: Record<string, number> = {}
-    for (const f of fontArr) { const id = ++oid; fontIds[f] = id; offsets[id] = s.size(); s.l(`${id} 0 obj`).l(`<</Type/Font/Subtype/Type1/BaseFont/${f}>>`).l('endobj') }
+    for (const f of fontArr) { const id = ++oid; fontIds[f] = id; offsets[id] = s.size(); s.l(`${id} 0 obj`).l(`<</Type/Font/Subtype/Type1/BaseFont/${f}/Encoding/WinAnsiEncoding>>`).l('endobj') }
 
     const contentIds: number[] = [], annotIds: number[][] = [], imgIds: number[][] = []
     for (const p of this.pages) {

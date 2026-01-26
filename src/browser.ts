@@ -23,7 +23,7 @@ const rgb = (c: Color): [number, number, number] => {
 }
 const fill = (c: Color) => { const [r, g, b] = rgb(c); return `${r.toFixed(3)} ${g.toFixed(3)} ${b.toFixed(3)} rg` }
 const stroke = (c: Color) => { const [r, g, b] = rgb(c); return `${r.toFixed(3)} ${g.toFixed(3)} ${b.toFixed(3)} RG` }
-const esc = (t: string) => t.replace(/\\/g, '\\\\').replace(/\(/g, '\\(').replace(/\)/g, '\\)')
+const esc = (t: string) => t.replace(/\\/g, '\\\\').replace(/\(/g, '\\(').replace(/\)/g, '\\)').replace(/[^\x00-\x7F]/g, c => `\\${c.charCodeAt(0).toString(8).padStart(3, '0')}`)
 const n = (v: number) => Number.isInteger(v) ? v.toString() : v.toFixed(2)
 const measure = (t: string, s: number) => t.length * s * 0.52
 
@@ -143,7 +143,7 @@ export class PDF {
     const allFonts = new Set<string>(); this.pages.forEach(p => p.f.forEach(f => allFonts.add(f)))
     const fontArr = Array.from(allFonts)
     const fontIds: Record<string, number> = {}
-    for (const f of fontArr) { const id = ++oid; fontIds[f] = id; offsets[id] = s.size(); s.l(`${id} 0 obj`).l(`<</Type/Font/Subtype/Type1/BaseFont/${f}>>`).l('endobj') }
+    for (const f of fontArr) { const id = ++oid; fontIds[f] = id; offsets[id] = s.size(); s.l(`${id} 0 obj`).l(`<</Type/Font/Subtype/Type1/BaseFont/${f}/Encoding/WinAnsiEncoding>>`).l('endobj') }
 
     const contentIds: number[] = [], annotIds: number[][] = [], imgIds: number[][] = []
     for (const p of this.pages) {
@@ -174,9 +174,9 @@ export class PDF {
     let infoId = 0
     if (this.meta) {
       infoId = ++oid; offsets[infoId] = s.size()
-      const d = new Date(), date = `D:${d.getFullYear()}${String(d.getMonth()+1).padStart(2,'0')}${String(d.getDate()).padStart(2,'0')}${String(d.getHours()).padStart(2,'0')}${String(d.getMinutes()).padStart(2,'0')}${String(d.getSeconds()).padStart(2,'0')}`
+      const d = new Date(), date = `D:${d.getFullYear()}${String(d.getMonth() + 1).padStart(2, '0')}${String(d.getDate()).padStart(2, '0')}${String(d.getHours()).padStart(2, '0')}${String(d.getMinutes()).padStart(2, '0')}${String(d.getSeconds()).padStart(2, '0')}`
       const m = this.meta
-      s.l(`${infoId} 0 obj`).l(`<<${m.title?`/Title(${esc(m.title)})`:''}${m.author?`/Author(${esc(m.author)})`:''}${m.subject?`/Subject(${esc(m.subject)})`:''}${m.keywords?`/Keywords(${esc(m.keywords)})`:''}${m.creator?`/Creator(${esc(m.creator)})`:''}/Producer(podpdf-browser)/CreationDate(${date})>>`).l('endobj')
+      s.l(`${infoId} 0 obj`).l(`<<${m.title ? `/Title(${esc(m.title)})` : ''}${m.author ? `/Author(${esc(m.author)})` : ''}${m.subject ? `/Subject(${esc(m.subject)})` : ''}${m.keywords ? `/Keywords(${esc(m.keywords)})` : ''}${m.creator ? `/Creator(${esc(m.creator)})` : ''}/Producer(podpdf-browser)/CreationDate(${date})>>`).l('endobj')
     }
 
     const catId = ++oid; offsets[catId] = s.size()
@@ -185,7 +185,7 @@ export class PDF {
     const xref = s.size()
     s.l('xref').l(`0 ${oid + 1}`).l('0000000000 65535 f ')
     for (let i = 1; i <= oid; i++) s.l(`${offsets[i].toString().padStart(10, '0')} 00000 n `)
-    s.l('trailer').l(`<</Size ${oid + 1}/Root ${catId} 0 R${infoId?`/Info ${infoId} 0 R`:''}>>`).l('startxref').l(xref.toString()).l('%%EOF')
+    s.l('trailer').l(`<</Size ${oid + 1}/Root ${catId} 0 R${infoId ? `/Info ${infoId} 0 R` : ''}>>`).l('startxref').l(xref.toString()).l('%%EOF')
     return s.out()
   }
 

@@ -34,7 +34,7 @@
     "dev": "bun --watch src/index.ts",
     "test": "bun test/test.ts",
     "example": "bun example.ts",
-    "samples": "bun samples/tables.ts && bun samples/invoice.ts && bun samples/report.ts"
+    "samples": "bun samples/tables.ts && bun samples/invoice.ts && bun samples/report.ts && bun samples/accent.ts"
   },
   "keywords": [
     "pdf",
