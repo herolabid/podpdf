@@ -9,15 +9,18 @@
   "exports": {
     ".": {
       "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
     },
     "./plus": {
       "import": "./dist/plus.js",
-      "types": "./dist/plus.d.ts"
+      "types": "./dist/plus.d.ts",
+      "default": "./dist/plus.js"
     },
     "./browser": {
       "import": "./dist/browser.js",
-      "types": "./dist/browser.d.ts"
+      "types": "./dist/browser.d.ts",
+      "default": "./dist/browser.js"
     }
   },
   "files": [
@@ -31,7 +34,7 @@
     "dev": "bun --watch src/index.ts",
     "test": "bun test/test.ts",
     "example": "bun example.ts",
-    "samples": "bun samples/tables.ts && bun samples/invoice.ts && bun samples/report.ts"
+    "samples": "bun samples/tables.ts && bun samples/invoice.ts && bun samples/report.ts && bun samples/accent.ts"
   },
   "keywords": [
     "pdf",
