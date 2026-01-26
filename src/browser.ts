@@ -174,9 +174,9 @@ export class PDF {
     let infoId = 0
     if (this.meta) {
       infoId = ++oid; offsets[infoId] = s.size()
-      const d = new Date(), date = `D:${d.getFullYear()}${String(d.getMonth() + 1).padStart(2, '0')}${String(d.getDate()).padStart(2, '0')}${String(d.getHours()).padStart(2, '0')}${String(d.getMinutes()).padStart(2, '0')}${String(d.getSeconds()).padStart(2, '0')}`
+      const d = new Date(), date = `D:${d.getFullYear()}${String(d.getMonth()+1).padStart(2,'0')}${String(d.getDate()).padStart(2,'0')}${String(d.getHours()).padStart(2,'0')}${String(d.getMinutes()).padStart(2,'0')}${String(d.getSeconds()).padStart(2,'0')}`
       const m = this.meta
-      s.l(`${infoId} 0 obj`).l(`<<${m.title ? `/Title(${esc(m.title)})` : ''}${m.author ? `/Author(${esc(m.author)})` : ''}${m.subject ? `/Subject(${esc(m.subject)})` : ''}${m.keywords ? `/Keywords(${esc(m.keywords)})` : ''}${m.creator ? `/Creator(${esc(m.creator)})` : ''}/Producer(podpdf-browser)/CreationDate(${date})>>`).l('endobj')
+      s.l(`${infoId} 0 obj`).l(`<<${m.title?`/Title(${esc(m.title)})`:''}${m.author?`/Author(${esc(m.author)})`:''}${m.subject?`/Subject(${esc(m.subject)})`:''}${m.keywords?`/Keywords(${esc(m.keywords)})`:''}${m.creator?`/Creator(${esc(m.creator)})`:''}/Producer(podpdf-browser)/CreationDate(${date})>>`).l('endobj')
     }
 
     const catId = ++oid; offsets[catId] = s.size()
