@@ -44,10 +44,31 @@ const doc = pdf('A4')
     }
   )
 
-  .link('Visiter Github', 'https://github.com', 50, 580)
+  .link('Visiter Github', 'https://github.com', 60, 580)
 
-  .text('Texte long avec retour à la ligne :', 50, 620, { size: 14, weight: 'bold' })
-  .text("Il s'agit d'un texte très long qui passera automatiquement à la ligne lorsqu'il dépassera la largeur maximale spécifiée dans les options.", 50, 640, { size: 12, maxWidth: 400 })
+  .text('Texte long avec retour à la ligne :', 60, 620, { size: 14, weight: 'bold' })
+  .text("Il s'agit d'un texte très long qui passera automatiquement à la ligne lorsqu'il dépassera la largeur maximale spécifiée dans les options.", 60, 640, { size: 12, maxWidth: 400 })
+
+  .page()
+
+  // 1. Title
+  .text("Testing Accent Support", 50, 50, { size: 24, weight: 'bold', align: 'left', color: '#333' })
+
+  // 2. French (Accents: é, à, ê, ç)
+  .text("French (Français):", 50, 100, { size: 14, weight: 'bold' })
+  .text("C'est l'été ! À bientôt. Garçon, une crêpe s'il vous plaît.", 50, 120, { size: 12 })
+
+  // 3. German (Umlauts: ä, ö, ü, ß)
+  .text("German (Deutsch):", 50, 160, { size: 14, weight: 'bold' })
+  .text("Heizölrückstoßabdämpfung. Übergrößen. Straße.", 50, 180, { size: 12 })
+
+  // 4. Spanish (Accents: ñ, í, ó)
+  .text("Spanish (Español):", 50, 220, { size: 14, weight: 'bold' })
+  .text("El niño comió una jalapeño mañana.", 50, 240, { size: 12 })
+
+  // 5. Mixed currencies and symbols usually supported by WinAnsi
+  .text("Symbols & Currencies:", 50, 280, { size: 14, weight: 'bold' })
+  .text("Price: 50£ / 45€ / $60. Copyright © 2024.", 50, 300, { size: 12 })
 
 await doc.save('samples/accent-demo.pdf')
 console.log('Created: samples/accent-demo.pdf')

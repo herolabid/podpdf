@@ -185,7 +185,7 @@ export class PDF {
     const xref = s.size()
     s.l('xref').l(`0 ${oid + 1}`).l('0000000000 65535 f ')
     for (let i = 1; i <= oid; i++) s.l(`${offsets[i].toString().padStart(10, '0')} 00000 n `)
-    s.l('trailer').l(`<</Size ${oid + 1}/Root ${catId} 0 R${infoId ? `/Info ${infoId} 0 R` : ''}>>`).l('startxref').l(xref.toString()).l('%%EOF')
+    s.l('trailer').l(`<</Size ${oid + 1}/Root ${catId} 0 R${infoId?`/Info ${infoId} 0 R`:''}>>`).l('startxref').l(xref.toString()).l('%%EOF')
     return s.out()
   }
 

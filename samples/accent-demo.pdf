@@ -299,22 +299,22 @@ q
 BT
 0.000 0.000 0.933 rg
 /Helvetica 12 Tf
-50 262 Td
+60 262 Td
 (Visiter Github) Tj
 ET
 Q
 q
 0.000 0.000 0.933 RG
 0.5 w
-50 260 m
-137.36 260 l
+60 260 m
+147.36 260 l
 S
 Q
 q
 BT
 0.000 0.000 0.000 rg
 /HelveticaBold 14 Tf
-50 222 Td
+60 222 Td
 (Texte long avec retour \340 la ligne :) Tj
 ET
 Q
@@ -322,7 +322,7 @@ q
 BT
 0.000 0.000 0.000 rg
 /Helvetica 12 Tf
-50 202 Td
+60 202 Td
 (Il s'agit d'un texte tr\350s long qui passera automatiquement \340 la) Tj
 ET
 Q
@@ -330,7 +330,7 @@ q
 BT
 0.000 0.000 0.000 rg
 /Helvetica 12 Tf
-50 187.60 Td
+60 187.60 Td
 (ligne lorsqu'il d\351passera la largeur maximale sp\351cifi\351e dans les) Tj
 ET
 Q
@@ -338,36 +338,118 @@ q
 BT
 0.000 0.000 0.000 rg
 /Helvetica 12 Tf
-50 173.20 Td
+60 173.20 Td
 (options.) Tj
 ET
 Q
 endstream
 endobj
 4 0 obj
-<</Type/Annot/Subtype/Link/Rect[50 250 137.36 262]/Border[0 0 0]/A<</Type/Action/S/URI/URI(https://github.com)>>>>
+<</Type/Annot/Subtype/Link/Rect[60 250 147.36 262]/Border[0 0 0]/A<</Type/Action/S/URI/URI(https://github.com)>>>>
 endobj
 5 0 obj
-<</Type/Pages/Kids[6 0 R]/Count 1>>
+<</Length 950>>
+stream
+q
+BT
+0.200 0.200 0.200 rg
+/HelveticaBold 24 Tf
+50 792 Td
+(Testing Accent Support) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/HelveticaBold 14 Tf
+50 742 Td
+(French \(Fran\347ais\):) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 12 Tf
+50 722 Td
+(C'est l'\351t\351 ! \300 bient\364t. Gar\347on, une cr\352pe s'il vous pla\356t.) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/HelveticaBold 14 Tf
+50 682 Td
+(German \(Deutsch\):) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 12 Tf
+50 662 Td
+(Heiz\366lr\374cksto\337abd\344mpfung. \334bergr\366\337en. Stra\337e.) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/HelveticaBold 14 Tf
+50 622 Td
+(Spanish \(Espa\361ol\):) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 12 Tf
+50 602 Td
+(El ni\361o comi\363 una jalape\361o ma\361ana.) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/HelveticaBold 14 Tf
+50 562 Td
+(Symbols & Currencies:) Tj
+ET
+Q
+q
+BT
+0.000 0.000 0.000 rg
+/Helvetica 12 Tf
+50 542 Td
+(Price: 50\243 / 45\20254 / $60. Copyright \251 2024.) Tj
+ET
+Q
+endstream
 endobj
 6 0 obj
-<</Type/Page/Parent 5 0 R/MediaBox[0 0 595 842]/Contents 3 0 R/Resources<</Font<</HelveticaBold 1 0 R/Helvetica 2 0 R>>>>/Annots[4 0 R]>>
+<</Type/Pages/Kids[7 0 R 8 0 R]/Count 2>>
 endobj
 7 0 obj
-<</Type/Catalog/Pages 5 0 R>>
+<</Type/Page/Parent 6 0 R/MediaBox[0 0 595 842]/Contents 3 0 R/Resources<</Font<</HelveticaBold 1 0 R/Helvetica 2 0 R>>>>/Annots[4 0 R]>>
+endobj
+8 0 obj
+<</Type/Page/Parent 6 0 R/MediaBox[0 0 595 842]/Contents 5 0 R/Resources<</Font<</HelveticaBold 1 0 R/Helvetica 2 0 R>>>>>>
+endobj
+9 0 obj
+<</Type/Catalog/Pages 6 0 R>>
 endobj
 xref
-0 8
+0 10
 0000000000 65535 f 
 0000000019 00000 n 
 0000000112 00000 n 
 0000000200 00000 n 
 0000004091 00000 n 
 0000004221 00000 n 
-0000004272 00000 n 
-0000004425 00000 n 
+0000005220 00000 n 
+0000005277 00000 n 
+0000005430 00000 n 
+0000005569 00000 n 
 trailer
-<</Size 8/Root 7 0 R>>
+<</Size 10/Root 9 0 R>>
 startxref
-4470
+5614
 %%EOF
