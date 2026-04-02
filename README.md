@@ -29,6 +29,7 @@
 |---------|:------:|:-----------:|:--------------:|
 | Text & Styling | ✅ | ✅ | ✅ |
 | Text Wrap & Alignment | ✅ | ✅ | ✅ |
+| Text Accent support | ✅ | ✅ | ✅ |
 | Shapes (rect, circle, line) | ✅ | ✅ | ✅ |
 | Tables | ✅ | ✅ | ✅ |
 | Images (JPEG) | ✅ | ✅ | ✅ |

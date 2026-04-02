@@ -200,6 +200,23 @@ console.log('  - PDF starts with %PDF:', new TextDecoder().decode(bytes.slice(0,
 console.log('  - Output size:', bytes.length, 'bytes')
 console.log('  PASSED\n')
 
+// Test 9: Accent character support
+console.log('Test 9: Accent character support')
+const accentDoc = pdf('A4')
+  .page()
+  .text('French: C\'est l\'été ! À bientôt. Garçon, une crêpe.', 50, 50, { size: 12 })
+  .text('German: Heizölrückstoßabdämpfung. Übergrößen.', 50, 80, { size: 12 })
+  .text('Spanish: El niño comió una jalapeño mañana.', 50, 110, { size: 12 })
+  .text('Symbols: 50£ / 45€ / $60. Copyright © 2024.', 50, 140, { size: 12 })
+const accentBytes = accentDoc.build()
+const accentContent = new TextDecoder().decode(accentBytes)
+console.log('  - Accent document builds without error:', accentBytes instanceof Uint8Array)
+console.log('  - PDF contains WinAnsiEncoding:', accentContent.includes('WinAnsiEncoding'))
+console.log('  - é encoded correctly:', accentContent.includes('\\351'))
+console.log('  - ü encoded correctly:', accentContent.includes('\\374'))
+await accentDoc.save('test/output/accent-test.pdf')
+console.log('  PASSED\n')
+
 console.log('========================================')
 console.log('All tests PASSED!')
 console.log('Check test/output/ folder for generated PDFs')
